@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Talita Franciskievicz | Portfólio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Olá, Sou Talita Franciskievicz</h1>
+    <p>Desenvolvedora Full Stack em formação</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre mim</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#estudos">Estudos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou apaixonada por tecnologia, ensino e criatividade. Atualmente estou me especializando em desenvolvimento web, com foco em HTML, CSS e JavaScript. Gosto de transformar ideias em realidade através de código.</p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <ul>
+        <li><strong>Portfólio Pessoal:</strong> este site que você está navegando 🌸</li>
+        <li><strong>Calculadora em JavaScript:</strong> uma calculadora funcional com operações básicas.</li>
+        <li><strong>Landing Page de Café:</strong> página de apresentação de uma cafeteria fictícia.</li>
+      </ul>
+    </section>
+
+    <section id="estudos">
+      <h2>Atualmente estudando</h2>
+      <ul>
+        <li>Curso de Desenvolvedor Full Stack na +PraTi</li>
+        <li>Curso Desenvolvedor Front End</li>
+
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Você pode me encontrar nas redes:</p>
+      <ul>
+        <li><a href="https://github.com/talitafranciskievicz" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/talita-franciskievicz/" target="_blank">LinkedIn</a></li>
+   
+      </ul>
+    </section>
+
+  </main>
+
+ 
+
+  <footer>
+    <p>&copy; 2025 Talita Franciskievicz. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section, article, aside");
+      sections.forEach(sec => {
+        sec.style.opacity = 0;
+        sec.style.transform = "translateY(30px)";
+      });
+      setTimeout(() => {
+        sections.forEach((sec, i) => {
+          setTimeout(() => {
+            sec.style.transition = "all 0.6s ease";
+            sec.style.opacity = 1;
+            sec.style.transform = "translateY(0)";
+          }, i * 200);
+        });
+      }, 200);
+    });
+  </script>
+</body>
+</html>
